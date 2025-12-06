@@ -11,6 +11,11 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "dayjs": "^1.11.19",
+    "lodash": "^4.17.21",
+    "micromodal": "^0.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
 }

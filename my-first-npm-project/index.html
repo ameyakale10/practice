@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>World Clock</title>
+  </head>
+  <body>
+    <div>
+      <span id="timezone-label"></span>
+      <div id="time-display"></div>
+      <div id="date-display"></div>
+      <button id="change-timezone-btn">Change</button>
+    </div>
+
+    <div class="modal micromodal-slide" id="timezone-modal" aria-hidden="true">
+      <div class="modal__overlay" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true">
+          <h2>Change Timezone</h2>
+          <select id="timezone-select">
+            <option value="Europe/London">Europe / London</option>
+            <option value="America/New_York">America / New York</option>
+            <option value="Asia/Tokyo">Asia / Tokyo</option>
+            <option value="Asia/Kolkata">Asia / Kolkata</option>
+          </select>
+          <button id="apply-timezone-btn">Apply</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./node_modules/dayjs/dayjs.min.js"></script>
+    <script src="./node_modules/dayjs/plugin/utc.js"></script>
+    <script src="./node_modules/dayjs/plugin/timezone.js"></script>
+    <script src="./node_modules/micromodal/dist/micromodal.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
