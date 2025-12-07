@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Playground</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      * { font-family: 'Inter', system-ui, sans-serif; }
+    </style>
+  </head>
+  <body class="min-h-screen bg-zinc-950 text-white antialiased">
+    <div id="app" class="min-h-screen flex items-center justify-center p-6">
+      <div class="w-full max-w-md">
+        <!-- Card -->
+        <div class="relative bg-zinc-900/80 backdrop-blur-xl border border-zinc-800 rounded-3xl p-8 shadow-2xl">
+          <!-- Glow -->
+          <div class="absolute -top-20 left-1/2 -translate-x-1/2 w-64 h-64 bg-amber-500/20 rounded-full blur-3xl pointer-events-none"></div>
+          
+          <div class="relative">
+            <!-- Icon -->
+            <div class="w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-2xl font-bold text-black shadow-lg shadow-amber-500/25">
+              JS
+            </div>
+            
+            <!-- Title -->
+            <h1 class="text-2xl font-bold text-center mb-2 bg-gradient-to-r from-amber-200 to-orange-300 bg-clip-text text-transparent">
+              JavaScript Playground
+            </h1>
+            <p id="subtitle" class="text-zinc-400 text-center text-sm mb-8">
+              Click the button to see the magic ✨
+            </p>
+            
+            <!-- Counter Display -->
+            <div class="flex items-center justify-center gap-4 mb-8">
+              <button id="decrement" class="w-12 h-12 rounded-xl bg-zinc-800 border border-zinc-700 text-xl font-bold hover:bg-zinc-700 hover:border-zinc-600 transition-all active:scale-95">
+                −
+              </button>
+              <div id="count" class="w-24 h-16 rounded-xl bg-zinc-800/50 border border-zinc-700/50 flex items-center justify-center text-3xl font-bold tabular-nums">
+                0
+              </div>
+              <button id="increment" class="w-12 h-12 rounded-xl bg-zinc-800 border border-zinc-700 text-xl font-bold hover:bg-zinc-700 hover:border-zinc-600 transition-all active:scale-95">
+                +
+              </button>
+            </div>
+            
+            <!-- Action Button -->
+            <button id="action-btn" class="w-full py-4 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 font-semibold text-black hover:opacity-90 transition-all active:scale-[0.98] shadow-lg shadow-amber-500/25">
+              Click Me!
+            </button>
+            
+            <!-- Stats -->
+            <div class="mt-6 pt-6 border-t border-zinc-800 grid grid-cols-2 gap-4 text-center">
+              <div>
+                <p class="text-2xl font-bold text-amber-400" id="total-clicks">0</p>
+                <p class="text-xs text-zinc-500">Total Clicks</p>
+              </div>
+              <div>
+                <p class="text-2xl font-bold text-orange-400" id="click-rate">0</p>
+                <p class="text-xs text-zinc-500">Clicks/sec</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Footer -->
+        <p class="text-center text-zinc-600 text-xs mt-6">
+          Edit script.js to customize
+        </p>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
