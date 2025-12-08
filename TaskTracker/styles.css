@@ -1,0 +1,49 @@
+/* styles.css */
+body {
+  font-family: system-ui, sans-serif;
+  background: #f5f5f5;
+}
+
+.app {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 24px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+#task-input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task-delete {
+  margin-left: auto;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
